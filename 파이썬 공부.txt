@@ -1,0 +1,10 @@
+np(넘파이)불러오기
+import numpy as np
+선언
+x = ([ 원소1,원소2  ])
+
+행렬(배열)의 형상은 shape, 원소의 자료형은 dtype
+ex) A.shape, A.dtype
+
+flatten() -> X를 1차원 배열로 변환(평탄화)
+
