@@ -228,3 +228,7 @@ print(t_train.shape)
 print(x_test.shape)
 print(t_test.shape)
 # %%
+print(t_train.shape)
+print(x_test.shape)
+print(t_test.shape)
+# %%
