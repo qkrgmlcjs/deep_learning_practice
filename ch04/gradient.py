@@ -1,3 +1,4 @@
+#%%
 import numpy as np
 import matplotlib.pylab as plt
 
@@ -34,7 +35,7 @@ def function_2(x):
 print(numerical_gradient(function_2, np.array([3.0, 4.0])))  # [ 6.  8.]
 print(numerical_gradient(function_2, np.array([0.0, 2.0])))  # [ 0.  4.]
 print(numerical_gradient(function_2, np.array([3.0, 0.0])))  # [ 6.  0.]
-
+#%%
 # 4.4.1 경사법(경사 하강법)
 # x0 = x0 - η*∂f/∂x0
 # x1 = x1 - η*∂f/∂x1
@@ -57,7 +58,7 @@ def gradient_descent(f, init_x, lr=0.01, step_num=100):
 
     return x, np.array(x_history)
 
-
+#%%
 # 경사법으로 f(x0, x1) = x0² + x1²의 최솟값을 구해라
 init_x = np.array([-3.0, 4.0])
 x, x_history = gradient_descent(function_2, init_x, lr=0.1)
@@ -86,3 +87,4 @@ plt.ylim(-4.5, 4.5)
 plt.xlabel("X0")
 plt.ylabel("X1")
 plt.show()
+# %%
